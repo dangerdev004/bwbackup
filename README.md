@@ -22,7 +22,7 @@ You will need some additional setup to do this securely.
 6. Now create a <code>.envrc</code> file where you have stored the script 
       <p><code>export DEVICEPASSWORD=<i>"Your encrypted drive password"</i></code></p>
 7. Enter the the command 
-      <p><code>direnv allow <i>The path of .envrc file</i></code></p>
+      <p><code>direnv allow <i>"The path of .envrc file"</i></code></p>
 **You are now all set with the prerequisites, make sure you are logged in your bitwarden vault through cli**
 
 8. Download the script

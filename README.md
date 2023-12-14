@@ -1,7 +1,7 @@
 # bwbackup (BitWarden Backup)
-This is a shell script to backup your bitwarden vault onto a cloud server & a local encrypted storage with encryption.
-This script also creates different versions everytime and keeps the old one as well and it will shred the .csv file and the container at the end as well
-You will need some additional setup to do this securely.
+<p>This is a shell script to backup your bitwarden vault onto a cloud server & a local encrypted storage with encryption.
+<p></p>This script also creates different versions everytime and keeps the old one as well and it will shred the .csv file and the container at the end as well.
+<p></p>You will need some additional setup to do this securely.
 
 # Dependencies
   This script requires **bitwarden-cli** & **direnv** installed on your system. To install bitwarden-cli & direnv refer to **[Bitwarden CLI Installation Guide](https://bitwarden.com/help/cli/)** & **[Direnv Installation Guide](https://github.com/direnv/direnv/blob/master/docs/installation.md)** respectively

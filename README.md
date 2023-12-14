@@ -17,7 +17,7 @@ You will need some additional setup to do this securely.
 
   This are environment variables that are needed to be set prior to the running of the script. We are using a zip file encryption to encrypt the .csv file which will be exported at the time of creating backup.
 5. There is one final setup that is **setting up direnv**
-      <p><<code>eval "$(direnv hook zsh)"</code></p>
+      <p><code>eval "$(direnv hook zsh)"</code></p>
     This will enable direnv to read environment variables from the files you want it to. Direnv is kind of like setting a local environment variable that only works in a certain folder
 6. Now create a <code>.envrc</code> file where you have stored the script 
       <p><code>export DEVICEPASSWORD=<i>"Your encrypted drive password"</i></code></p>

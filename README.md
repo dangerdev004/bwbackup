@@ -8,21 +8,26 @@
 
 1. We will create a separate partition which will be password protected. We will use **LUKS** to achieve this. This guide will help you in doing so
       **<p>[LUKS Encryption Guide](https://www.redhat.com/sysadmin/disk-encryption-luks)</p>**
-3. Once created create a .txt file inside this encrypted partition and keep it hidden by putting a .(dot) before the filename.
-4. You will need to type the following inside it:
+2. Once created create a .txt file inside this encrypted partition and keep it hidden by putting a .(dot) before the filename.
+3. You will need to type the following inside it:
       <p><dir="auto"><code>export BITPASS=<i>"Your bitwarden vault password"</i></code></p>
       <p><dir="auto"><code>export ZIPASS=<i>"The password of the file you want to keep"</i></code></p>
 
 # Explaination for prior steps
 
   This are environment variables that are needed to be set prior to the running of the script. We are using a zip file encryption to encrypt the .csv file which will be exported at the time of creating backup.
-5. There is one final setup that is **setting up direnv**
+
+4. There is one final setup that is **setting up direnv**
       <p><code>eval "$(direnv hook zsh)"</code></p>
     This will enable direnv to read environment variables from the files you want it to. Direnv is kind of like setting a local environment variable that only works in a certain folder
-6. Now create a <code>.envrc</code> file where you have stored the script 
+5. Now create a <code>.envrc</code> file where you have stored the script 
       <p><code>export DEVICEPASSWORD=<i>"Your encrypted drive password"</i></code></p>
-7. Enter the the command 
+6. Enter the the command 
       <p><code>direnv allow <i>"The path of .envrc file"</i></code></p>
+7. You will need a cloud storage mounted on your system. I use **onedriver** for this purpose but you can use anything else if you want. You can use **Rclone** if you want to use Google Drive
+
+      [Onedriver](https://github.com/jstaf/onedriver)|[Rclone](https://rclone.org/)
+
 **You are now all set with the prerequisites, make sure you are logged in your bitwarden vault through cli**
 
 8. Download the script

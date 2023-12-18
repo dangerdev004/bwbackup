@@ -15,7 +15,7 @@
 
 # Explaination for prior steps
 
-  This are environment variables that are needed to be set prior to the running of the script. We are using a zip file encryption to encrypt the .csv file which will be exported at the time of creating backup.
+  These are environment variables that are needed to be set prior to the running of the script. We are using a zip file encryption to encrypt the .csv file which will be exported at the time of creating backup.
 
 4. There is one final setup that is **setting up direnv**
       <p><code>eval "$(direnv hook zsh)"</code></p>

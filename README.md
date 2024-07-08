@@ -3,7 +3,7 @@
 <p></p>This script also creates different versions everytime and keeps the old one as well and it will shred the .csv file and the container at the end as well.
 <p></p>You will need some additional setup to do this securely.
 
-# Dependencies
+# Setting up Dependencies
   This script requires **bitwarden-cli** & **direnv** installed on your system. To install bitwarden-cli & direnv refer to **[Bitwarden CLI Installation Guide](https://bitwarden.com/help/cli/)** & **[Direnv Installation Guide](https://github.com/direnv/direnv/blob/master/docs/installation.md)** respectively
 
 1. We will create a separate partition which will be password protected. We will use **LUKS** to achieve this. This guide will help you in doing so
